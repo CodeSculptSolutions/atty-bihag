@@ -21,12 +21,12 @@ const pillars = [
 
 export function Approach() {
   return (
-    <Container as="section" id="approach" className="py-24 bg-secondary">
+    <Container as="section" id="approach" className="py-16 md:py-24 bg-secondary">
       <div className="max-w-7xl mx-auto">
 
         {/* Header row */}
         <FadeInSection>
-          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-20">
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-12 md:mb-20">
             <div>
               <p className="text-xs tracking-widest uppercase font-sans text-muted-foreground mb-3">
                 Approach
@@ -47,24 +47,24 @@ export function Approach() {
             {pillars.map((pillar, i) => (
               <div
                 key={pillar.number}
-                className="grid grid-cols-1 md:grid-cols-[120px_1fr_1.4fr] gap-6 md:gap-12 py-10 border-t border-border last:border-b group"
+                className="grid grid-cols-[56px_1fr] md:grid-cols-[120px_1fr_1.4fr] gap-x-4 gap-y-3 md:gap-12 py-8 md:py-10 border-t border-border last:border-b group"
               >
                 {/* Number */}
                 <div className="flex items-start">
-                  <span className="font-serif text-5xl text-primary/20 font-light leading-none group-hover:text-primary/40 transition-colors duration-300">
+                  <span className="font-serif text-3xl md:text-5xl text-primary/20 font-light leading-none group-hover:text-primary/40 transition-colors duration-300">
                     {pillar.number}
                   </span>
                 </div>
 
                 {/* Heading */}
                 <div className="flex items-start">
-                  <h3 className="font-serif text-3xl text-foreground font-light leading-tight">
+                  <h3 className="font-serif text-2xl md:text-3xl text-foreground font-light leading-tight">
                     {pillar.heading}
                   </h3>
                 </div>
 
                 {/* Body */}
-                <div className="flex items-start">
+                <div className="flex items-start col-span-2 md:col-span-1">
                   <p className="font-sans text-sm text-muted-foreground leading-relaxed max-w-md">
                     {pillar.body}
                   </p>

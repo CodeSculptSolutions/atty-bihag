@@ -12,28 +12,28 @@ const stats = [
 
 export function About() {
   return (
-    <Container as="section" id="about" className="py-24 overflow-hidden">
+    <Container as="section" id="about" className="py-16 md:py-24 overflow-hidden">
       <div className="max-w-7xl mx-auto">
 
         {/* Eyebrow */}
         <FadeInSection>
-          <p className="text-xs tracking-widest uppercase font-sans text-muted-foreground mb-16">
+          <p className="text-xs tracking-widest uppercase font-sans text-muted-foreground mb-8 md:mb-16">
             About
           </p>
         </FadeInSection>
 
         {/* Hero quote block */}
         <FadeInSection delay={0.1}>
-          <div className="relative mb-20">
+          <div className="relative mb-12 md:mb-20">
             {/* Decorative open-quote */}
             <span
-              className="absolute -top-10 -left-4 font-serif text-[160px] leading-none text-primary/10 select-none pointer-events-none"
+              className="absolute -top-6 -left-2 md:-top-10 md:-left-4 font-serif text-[80px] md:text-[160px] leading-none text-primary/10 select-none pointer-events-none"
               aria-hidden="true"
             >
               &ldquo;
             </span>
 
-            <blockquote className="relative font-serif italic text-4xl md:text-5xl lg:text-6xl text-foreground leading-[1.08] tracking-tight max-w-5xl">
+            <blockquote className="relative font-serif italic text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-foreground leading-[1.08] tracking-tight max-w-5xl">
               The law, at its best, is an instrument of dignity.
             </blockquote>
 
@@ -47,10 +47,10 @@ export function About() {
         </FadeInSection>
 
         {/* Full-width divider */}
-        <div className="w-full h-px bg-border mb-20" />
+        <div className="w-full h-px bg-border mb-12 md:mb-20" />
 
         {/* Stats + Prose grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.8fr] gap-16 lg:gap-24">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.8fr] gap-10 lg:gap-24">
 
           {/* Left — stat tower */}
           <FadeInSection delay={0.15}>
@@ -64,7 +64,7 @@ export function About() {
                   transition={{ duration: 0.55, delay: 0.1 + i * 0.1, ease: "easeOut" }}
                   className="py-8 border-t border-border last:border-b"
                 >
-                  <p className="font-serif text-6xl md:text-7xl text-primary font-light leading-none mb-2 whitespace-pre-line">
+                  <p className="font-serif text-4xl md:text-5xl lg:text-6xl text-primary font-light leading-none mb-2 whitespace-pre-line">
                     {stat.value}
                   </p>
                   <p className="font-sans text-xs uppercase tracking-[0.16em] text-muted-foreground">
@@ -79,7 +79,7 @@ export function About() {
           <FadeInSection delay={0.2}>
             <div className="space-y-7">
               <p className="font-sans text-base leading-relaxed text-foreground">
-                <span className="float-left font-serif text-7xl text-primary leading-[0.82] mr-3 mt-1 select-none">
+                <span className="float-left font-serif text-5xl md:text-7xl text-primary leading-[0.82] mr-3 mt-1 select-none">
                   I
                 </span>
                 &rsquo;m a Cebu-based attorney admitted to the Philippine Bar in

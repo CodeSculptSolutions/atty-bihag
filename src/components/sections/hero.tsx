@@ -136,7 +136,7 @@ export function Hero() {
         style={{ y: yLeft, opacity: opLeft }}
         className="flex flex-1 min-w-0"
       >
-        <div className="flex flex-col justify-between w-full py-24">
+        <div className="flex flex-col justify-between w-full pt-24 pb-16 md:py-24">
 
           {/* TOP — eyebrow */}
           <motion.p
@@ -149,13 +149,13 @@ export function Hero() {
           </motion.p>
 
           {/* MIDDLE — name + body */}
-          <div className="space-y-8 my-auto py-12">
+          <div className="space-y-6 md:space-y-8 my-auto py-8 md:py-12">
             <div>
               <motion.h1
                 initial={{ opacity: 0, y: 28 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 0.1 }}
-                className="font-serif text-6xl md:text-7xl lg:text-8xl text-foreground leading-[1.02] tracking-tight"
+                className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-foreground leading-[1.02] tracking-tight"
                 style={{ fontVariationSettings: "'opsz' 144" }}
               >
                 Krystyll Ann
@@ -164,7 +164,7 @@ export function Hero() {
                 initial={{ opacity: 0, y: 28 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 0.25 }}
-                className="font-serif italic text-6xl md:text-7xl lg:text-8xl text-primary leading-[1.02] tracking-tight"
+                className="font-serif italic text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-primary leading-[1.02] tracking-tight"
                 style={{ fontVariationSettings: "'opsz' 144" }}
               >
                 Bihag.

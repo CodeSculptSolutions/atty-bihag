@@ -49,7 +49,7 @@ const timeline = [
 
 export function Credentials() {
   return (
-    <Container as="section" id="credentials" className="py-24">
+    <Container as="section" id="credentials" className="py-16 md:py-24">
       <div className="max-w-7xl mx-auto">
 
         {/* Header */}
@@ -57,25 +57,25 @@ export function Credentials() {
           <p className="text-xs tracking-widest uppercase font-sans text-muted-foreground mb-3">
             Credentials
           </p>
-          <h2 className="font-serif text-4xl md:text-5xl text-foreground font-light mb-14">
+          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground font-light mb-10 md:mb-14">
             Background &amp; Training
           </h2>
         </FadeInSection>
 
         {/* Stat bar */}
         <FadeInSection delay={0.08}>
-          <div className="grid grid-cols-3 border-t border-b border-border mb-20">
+          <div className="grid grid-cols-3 border-t border-b border-border mb-12 md:mb-20">
             {stats.map((s, i) => (
               <div
                 key={s.label}
                 className={[
-                  "py-8 px-6",
+                  "py-5 px-3 sm:py-8 sm:px-6",
                   i > 0 ? "border-l border-border" : "",
                 ]
                   .filter(Boolean)
                   .join(" ")}
               >
-                <p className="font-serif text-5xl md:text-6xl text-primary font-light leading-none mb-2">
+                <p className="font-serif text-2xl sm:text-3xl md:text-5xl lg:text-6xl text-primary font-light leading-none mb-1 sm:mb-2">
                   {s.value}
                 </p>
                 <p className="font-sans text-xs uppercase tracking-[0.14em] text-muted-foreground">
@@ -87,7 +87,7 @@ export function Credentials() {
         </FadeInSection>
 
         {/* Timeline + aside */}
-        <div className="grid grid-cols-1 lg:grid-cols-[1.4fr_1fr] gap-16 lg:gap-24">
+        <div className="grid grid-cols-1 lg:grid-cols-[1.4fr_1fr] gap-10 lg:gap-24">
 
           {/* Left — vertical timeline */}
           <FadeInSection delay={0.12}>

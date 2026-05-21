@@ -97,7 +97,7 @@ export function Contact() {
   };
 
   return (
-    <Container as="section" id="contact" className="py-24">
+    <Container as="section" id="contact" className="py-16 md:py-24">
       <div className="max-w-7xl mx-auto">
 
         {/* Header */}

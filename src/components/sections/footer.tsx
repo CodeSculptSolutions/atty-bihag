@@ -8,7 +8,7 @@ export function Footer() {
       <div className="max-w-7xl mx-auto py-16 border-t border-border">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8">
           <div>
-            <p className="font-serif italic text-3xl md:text-4xl text-foreground font-light leading-snug mb-4">
+            <p className="font-serif italic text-2xl md:text-3xl lg:text-4xl text-foreground font-light leading-snug mb-4">
               Thank you for visiting.
             </p>
             <p className="font-sans text-sm text-muted-foreground">
@@ -17,7 +17,7 @@ export function Footer() {
           </div>
 
           <div className="flex flex-col items-start md:items-end gap-1">
-            <span className="font-serif text-4xl text-primary/20 leading-none">KAB</span>
+            <span className="font-serif text-2xl md:text-4xl text-primary/20 leading-none">KAB</span>
             <p className="font-sans text-xs uppercase tracking-[0.18em] text-muted-foreground">
               Krystyll Ann Bihag, Atty.
             </p>
