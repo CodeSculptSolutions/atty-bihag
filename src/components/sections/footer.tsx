@@ -30,6 +30,14 @@ export function Footer() {
         <p className="font-sans text-xs text-muted-foreground shrink-0">
           © 2026 Krystyll Ann Bihag, Atty.
         </p>
+        <a
+          href="https://codesculptsolutions.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-sans text-xs text-muted-foreground/60 hover:text-muted-foreground transition-colors shrink-0"
+        >
+          Built by Code Sculpt Solutions
+        </a>
         <p className="font-sans text-xs text-muted-foreground/70 leading-relaxed">
           The information on this site is for general purposes and does not
           constitute legal advice. No attorney-client relationship is created by
