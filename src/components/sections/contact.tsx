@@ -66,6 +66,7 @@ const inputClass =
 
 export function Contact() {
   const [submitted, setSubmitted] = useState(false);
+  const [sendError, setSendError] = useState(false);
 
   const {
     register,
@@ -80,8 +81,18 @@ export function Contact() {
 
   const descriptionValue = watch("description") ?? "";
 
-  const onSubmit = (data: FormData) => {
-    console.log("Form submission:", data);
+  const onSubmit = async (data: FormData) => {
+    setSendError(false);
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    });
+
+    if (!res.ok) {
+      setSendError(true);
+      return;
+    }
     setSubmitted(true);
   };
 
@@ -253,13 +264,18 @@ export function Contact() {
                     </div>
                   </div>
 
+                  {sendError && (
+                    <p className="mt-6 text-xs text-destructive">
+                      Something went wrong. Please try again or email directly.
+                    </p>
+                  )}
                   <Button
                     type="submit"
                     size="lg"
                     disabled={isSubmitting}
-                    className="mt-8 w-full md:w-auto"
+                    className="mt-4 w-full md:w-auto"
                   >
-                    Send Inquiry
+                    {isSubmitting ? "Sending…" : "Send Inquiry"}
                   </Button>
                 </motion.form>
               )}
