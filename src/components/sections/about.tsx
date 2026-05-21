@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { FadeInSection } from "@/components/fade-in-section";
+import { Container } from "@/components/container";
 
 const stats = [
   { value: "2025", label: "Bar Admitted" },
@@ -11,7 +12,7 @@ const stats = [
 
 export function About() {
   return (
-    <section id="about" className="py-24 px-6 md:px-12 lg:px-24 overflow-hidden">
+    <Container as="section" id="about" className="py-24 overflow-hidden">
       <div className="max-w-7xl mx-auto">
 
         {/* Eyebrow */}
@@ -91,7 +92,7 @@ export function About() {
                 I graduated Cum Laude from the University of San Carlos with a
                 degree in Political Science, majoring in International Relations
                 and Foreign Service, and earned my Juris Doctor from the
-                University of Cebu. Before joining Salas Law Office, I served as
+                University of Cebu. Before entering private practice, I served as
                 Attorney I at the Local Government of Mandaue City, where I
                 drafted ordinances and legal opinions on matters of public
                 concern.
@@ -115,6 +116,6 @@ export function About() {
 
         </div>
       </div>
-    </section>
+    </Container>
   );
 }

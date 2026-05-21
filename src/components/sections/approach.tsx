@@ -1,4 +1,5 @@
 import { FadeInSection } from "@/components/fade-in-section";
+import { Container } from "@/components/container";
 
 const pillars = [
   {
@@ -20,7 +21,7 @@ const pillars = [
 
 export function Approach() {
   return (
-    <section id="approach" className="py-24 px-6 md:px-12 lg:px-24 bg-secondary">
+    <Container as="section" id="approach" className="py-24 bg-secondary">
       <div className="max-w-7xl mx-auto">
 
         {/* Header row */}
@@ -84,6 +85,6 @@ export function Approach() {
         </FadeInSection>
 
       </div>
-    </section>
+    </Container>
   );
 }

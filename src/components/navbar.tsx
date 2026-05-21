@@ -31,7 +31,7 @@ export function Navbar() {
             : { backgroundColor: "hsl(36 38% 96% / 0)",    borderBottomColor: "hsl(24 13% 38% / 0)" }
         }
         transition={{ duration: 0.3, ease: "easeInOut" }}
-        className="border-b backdrop-blur-md px-6 md:px-12 lg:px-24"
+        className="border-b backdrop-blur-md px-6 md:px-10 lg:px-24"
       >
         <div className="max-w-7xl mx-auto flex items-center justify-between h-16">
 

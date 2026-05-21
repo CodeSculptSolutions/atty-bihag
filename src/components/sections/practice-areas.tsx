@@ -12,6 +12,7 @@ import {
   ChevronDown,
 } from "lucide-react";
 import { FadeInSection } from "@/components/fade-in-section";
+import { Container } from "@/components/container";
 import { cn } from "@/lib/utils";
 import type { LucideIcon } from "lucide-react";
 
@@ -169,7 +170,7 @@ export function PracticeAreas() {
     setExpanded((prev) => (prev === id ? null : id));
 
   return (
-    <section id="practice-areas" className="py-24 px-6 md:px-12 lg:px-24">
+    <Container as="section" id="practice-areas" className="py-24">
       <div className="max-w-7xl mx-auto">
 
         {/* Section header */}
@@ -204,6 +205,6 @@ export function PracticeAreas() {
         </div>
 
       </div>
-    </section>
+    </Container>
   );
 }

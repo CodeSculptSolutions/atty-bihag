@@ -1,6 +1,8 @@
+import { Container } from "@/components/container";
+
 export function Footer() {
   return (
-    <footer className="px-6 md:px-12 lg:px-24 mt-auto">
+    <Container as="footer" className="mt-auto">
 
       {/* Closing flourish */}
       <div className="max-w-7xl mx-auto py-16 border-t border-border">
@@ -35,6 +37,6 @@ export function Footer() {
         </p>
       </div>
 
-    </footer>
+    </Container>
   );
 }

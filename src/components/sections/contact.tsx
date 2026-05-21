@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
 import { FadeInSection } from "@/components/fade-in-section";
+import { Container } from "@/components/container";
 
 const matterTypes = [
   "Civil Litigation",
@@ -85,7 +86,7 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="py-24 px-6 md:px-12 lg:px-24">
+    <Container as="section" id="contact" className="py-24">
       <div className="max-w-7xl mx-auto">
 
         {/* Header */}
@@ -197,7 +198,7 @@ export function Contact() {
                     <FieldRow label="Matter Type" error={errors.matterType?.message}>
                       <select
                         {...register("matterType")}
-                        className="w-full bg-transparent border-0 border-b border-border pb-1 font-sans text-sm text-foreground focus:outline-none focus:border-primary transition-colors duration-200 cursor-pointer"
+                        className="w-full appearance-none bg-transparent border-0 border-b border-border pb-1 font-sans text-sm text-foreground focus:outline-none focus:border-primary transition-colors duration-200 cursor-pointer"
                       >
                         <option value="">Select a practice area…</option>
                         {matterTypes.map((t) => (
@@ -267,6 +268,6 @@ export function Contact() {
 
         </div>
       </div>
-    </section>
+    </Container>
   );
 }

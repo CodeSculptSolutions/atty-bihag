@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { FadeInSection } from "@/components/fade-in-section";
+import { Container } from "@/components/container";
 
 const stats = [
   { value: "2025", label: "Philippine Bar Admitted" },
@@ -48,7 +49,7 @@ const timeline = [
 
 export function Credentials() {
   return (
-    <section id="credentials" className="py-24 px-6 md:px-12 lg:px-24">
+    <Container as="section" id="credentials" className="py-24">
       <div className="max-w-7xl mx-auto">
 
         {/* Header */}
@@ -155,7 +156,7 @@ export function Credentials() {
                   Associate Attorney
                 </p>
                 <p className="font-sans text-sm text-muted-foreground">
-                  Salas Law Office · Cebu, Philippines
+                  Cebu, Philippines
                 </p>
                 <div className="mt-4 flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
@@ -188,6 +189,6 @@ export function Credentials() {
 
         </div>
       </div>
-    </section>
+    </Container>
   );
 }
